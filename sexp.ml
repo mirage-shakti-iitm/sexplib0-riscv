@@ -1,6 +1,6 @@
 [@@@ocaml.warning "-3"]
 
-open Sexp_cap_tee
+(* open Sexp_cap_tee *)
 
 (* blit_string doesn't exist in [StdLabels.Bytes]...  *)
 let bytes_blit_string ~src ~src_pos ~dst ~dst_pos ~len =

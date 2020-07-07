@@ -1,6 +1,6 @@
 (* Conv_error: Module for Handling Errors during Automated S-expression
    Conversions *)
-open Sexp_conv_error_cap_tee
+(* open Sexp_conv_error_cap_tee *)
 
 open StdLabels
 open Printf

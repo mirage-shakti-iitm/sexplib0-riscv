@@ -1,5 +1,5 @@
 (* Utility Module for S-expression Conversions *)
-open Sexp_conv_cap_tee
+(* open Sexp_conv_cap_tee *)
 
 let polymorphic_compare = compare
 open StdLabels
