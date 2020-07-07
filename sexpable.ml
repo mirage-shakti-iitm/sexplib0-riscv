@@ -1,3 +1,5 @@
+open Sexpable_cap_tee
+
 module type S = sig
   type t
 
