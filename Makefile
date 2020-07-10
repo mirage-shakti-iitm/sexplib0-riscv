@@ -1,5 +1,8 @@
 INSTALL_ARGS := $(if $(PREFIX),--prefix $(PREFIX),)
 
+add-cap-files:
+	./choose_compartment_strategy.sh $(COMPARTMENT_STRATEGY_CHOICE)
+
 default:
 	dune build
 
@@ -14,4 +17,4 @@ reinstall: uninstall install
 clean:
 	dune clean
 
-.PHONY: default install uninstall reinstall clean
+.PHONY: default install uninstall reinstall clean add-cap-files

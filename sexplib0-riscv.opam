@@ -8,7 +8,8 @@ dev-repo: "git+https://github.com/janestreet/sexplib0.git"
 doc: "https://ocaml.janestreet.com/ocaml-core/latest/doc/sexplib0/index.html"
 license: "MIT"
 build: [
-  ["dune" "build" "-x" "riscv" "-p" "sexplib0" "-j" jobs]
+	[make "add-cap-files"]
+	["dune" "build" "-x" "riscv" "-p" "sexplib0" "-j" jobs]
 ]
 depends: [
   "ocaml" {>= "4.04.2"}
