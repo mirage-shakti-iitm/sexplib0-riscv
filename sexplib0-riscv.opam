@@ -12,8 +12,7 @@ build: [
 	["dune" "build" "-x" "riscv" "-p" "sexplib0" "-j" jobs]
 ]
 depends: [
-  "ocaml" {>= "4.04.2"}
-  "ocaml-riscv"
+  "ocaml-riscv" {>= "4.07.0"}
   "dune"  {build & >= "1.5.1"}
 ]
 synopsis: "Library containing the definition of S-expressions and some base converters"
